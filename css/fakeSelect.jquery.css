@@ -1,0 +1,48 @@
+body { font-family: arial; }
+
+/* BEGIN FAKE DROP DOWN CSS */
+
+.fakeFitmentDD { 
+	overflow-y:auto;
+	overflow-x:auto;
+	background-color:#FFF; 
+	border:1px solid #999;  
+	position:absolute; 
+	z-index:5010;
+	font-size: 11px;
+	}
+.fakeFitmentDD .fakeOptGroup { background-color:#CCC; padding-left:1px; color:#316D89; font-style:italic;}
+.fakeFitmentDD a { display:block; width:auto; text-decoration:none; padding:1px 4px; color:#316D89;}
+.fakeFitmentDD a:hover {  background-color:#2974DF; color:#FFF;}
+.fakeFitmentDD a.selected {  background-color:#2974DF; color:#FFF;}
+
+/* skinned select */
+div.fakeDDSelect {
+	background: url(../img/fakeSelectSprite.gif) no-repeat scroll 0 0;
+	height:20px;
+	margin-top:10px;
+	width:115px;
+	position:relative;
+	clear:both;
+	font-size: 11px;
+	}
+div.fakeDDSelect:hover { cursor:pointer;}
+
+div.fakeDDSelect.disabled {
+	background-position: 0 -23px;
+	}
+
+div.fakeDDSelect .select-text {
+  	position: absolute;
+	width: 115px;
+	margin: 4px 0 0 8px;
+	z-index: 1;
+	color: #316D89;
+	}
+
+#tireModuleWrap select {
+ 	width: 115px;
+ 	font-size: 11px;
+  	border: 1px solid #D5E6EE;
+  	display:none;
+	}

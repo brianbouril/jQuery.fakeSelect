@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">   
+               
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>fakeSelect Example</title>
+	
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+	
+	<link rel="stylesheet" href="css/fakeSelect.jquery.css" type="text/css" />
+	
+	<script type="text/javascript" src="js/fakeSelect.jquery.js"></script>	
+	<script type="text/javascript">
+	
+	// Call to apply fake select
+	$(window).load(function(){
+		$('#savedVehicleSelect').fakeSelect();
+		$('#yearId').fakeSelect();
+		$('#makeId').fakeSelect();
+		$('#modelId').fakeSelect();
+		$('#trimId').fakeSelect();
+	});
+	
+	</script>
+	
+	
+</head>
+
+<body>
+
+	<select id="savedVehicleSelect">
+			<option>Saved Vehicles</option>
+	 	
+	 		<optgroup label="Saved Vehicles">
+	 			
+		 			<option>2009 BUICK LACROSS CXL; 4502-4533 lbs.; 110.5 in. V8-325  5.3L</option>
+		 		
+		 			<option>2006 BUICK RENDEZVOU CX; 5357-5534 lbs.; 112.2 in. V6-213  3.5L OHV</option>
+		 		
+		 			<option>2002 AUDI A 2.7T V6-2976 3.0L DOHC</option>
+		 		
+		 			<option>2011 KIA SORENT EX 4 Cyl.; 4925-5534 lbs.; 106.3 in. V6-3470 3.5L DOHC</option>
+		 		
+	 		</optgroup>
+	 			 	
+	 	
+			<optgroup label="Recently Selected Vehicles">
+		 		
+		 			<option>2008 CADILLAC ESCALADE;Escalade EXT; 7200 lbs.; 130 in. V8-378  6.2L</option>
+		 		
+		 			<option>2010 BUICK LACROSSE;CX; 4886 lbs.; 111.7 in. V6-2994 3.0L DOHC</option>
+		 		
+		 			<option>2009 AUDI A4;3.2 S Line; 4949 lbs.; 110.6 in. V6-3123 3.2L DOHC</option>
+		 		
+		 			<option>2009 BMW 328 Series;328xi; Coupe w/Sport Pkg. (W Rated Option); 108.7 in. 6-2996 3.0L DOHC</option>
+		 		
+	 		</optgroup>
+	 	
+	</select>
+	
+	<select id="yearId" name="year">
+    	<option>Year</option>
+    </select>
+
+
+    <select  id="makeId" name="make">
+        <option>Make</option>
+    </select>
+
+
+    <select  id="modelId" name="model">
+        <option>Model</option>
+    </select>
+
+
+    <select  id="trimId" name="trim">
+        <option>Trim</option>
+    </select>
+
+</body>
+</html>
