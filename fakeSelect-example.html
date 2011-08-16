@@ -3,31 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>fakeSelect Example</title>
-	
-	
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-	
+		
 	<link rel="stylesheet" href="css/fakeSelect.jquery.css" type="text/css" />
-	
-	<script type="text/javascript" src="js/fakeSelect.jquery.js"></script>	
-	<script type="text/javascript">
-	
-	// Call to apply fake select
-	$(window).load(function(){
-		$('#savedVehicleSelect').fakeSelect();
-		$('#yearId').fakeSelect();
-		$('#makeId').fakeSelect();
-		$('#modelId').fakeSelect();
-		$('#trimId').fakeSelect();
-	});
-	
-	</script>
-	
 	
 </head>
 
 <body>
-
+	<!--
 	<select id="savedVehicleSelect">
 			<option>Saved Vehicles</option>
 	 	
@@ -57,25 +39,61 @@
 	 		</optgroup>
 	 	
 	</select>
-	
+	-->
 	<select id="yearId" name="year">
+    	<option>Year</option>
+    	<option>Year</option>
+    	<option>Year</option>
+    	<option>Year</option>
+    	<option>Year</option>
     	<option>Year</option>
     </select>
 
 
     <select  id="makeId" name="make">
         <option>Make</option>
+        <option>Make</option>
+        <option>Make</option>
+        <option>Make</option>
+        <option>Make</option>
+        <option>Make</option>
     </select>
 
 
     <select  id="modelId" name="model">
+        <option>Model</option>
+        <option>Model</option>
+        <option>Model</option>
+        <option>Model</option>
+        <option>Model</option>
         <option>Model</option>
     </select>
 
 
     <select  id="trimId" name="trim">
         <option>Trim</option>
+        <option>Trim</option>
+        <option>Trim</option>
+        <option>Trim</option>
+        <option>Trim</option>
     </select>
+
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>	
+<script type="text/javascript" src="js/fakeSelect.jquery.js"></script>	
+<script type="text/javascript">
+
+// Call to apply fake select
+$(window).load(function(){
+	$('#savedVehicleSelect').fakeSelect();
+	$('#yearId').fakeSelect();
+	$('#makeId').fakeSelect();
+	$('#modelId').fakeSelect();
+	$('#trimId').fakeSelect();
+});
+
+</script>
 
 </body>
 </html>
