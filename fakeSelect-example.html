@@ -41,12 +41,12 @@
 	</select>
 	-->
 	<select id="yearId" name="year">
-    	<option>Year</option>
-    	<option>Year</option>
-    	<option>Year</option>
-    	<option>Year</option>
-    	<option>Year</option>
-    	<option>Year</option>
+    	<option>Year 1</option>
+    	<option>Year 2</option>
+    	<option>Year 3</option>
+    	<option>Year 4</option>
+    	<option>Year 5</option>
+    	<option>Year 6</option>
     </select>
 
 
@@ -70,7 +70,7 @@
     </select>
 
 
-    <select  id="trimId" name="trim">
+    <select  id="trimId" name="trim" disabled="disabled">
         <option>Trim</option>
         <option>Trim</option>
         <option>Trim</option>
@@ -86,7 +86,7 @@
 
 // Call to apply fake select
 $(window).load(function(){
-	$('#savedVehicleSelect').fakeSelect();
+	//$('#savedVehicleSelect').fakeSelect();
 	$('#yearId').fakeSelect();
 	$('#makeId').fakeSelect();
 	$('#modelId').fakeSelect();

@@ -9,8 +9,8 @@ $.fn.fakeSelect = function(){
 		selectBox.hide();
 		selectId = selectBox.attr('id');
 			
-		selectBox.wrap('<div id="'+selectId+'Parent" class="fakeDDSelect" />');
-		$('body').append('<div class="'+selectId+' fakeFitmentDD hide" style="display:none;"><a href="javascript:;">Choose...</a></div>');
+		selectBox.wrap('<div id="'+selectId+'Parent" class="skindSelect" />');
+		$('body').append('<div class="'+selectId+' skindSelectDD hide" style="display:none;"><a href="javascript:;">Choose...</a></div>');
 			
 		// --JS to Skin Select Boxes
 		selectBox.before('<div class="select-text">a</div>').each(
@@ -78,7 +78,7 @@ $.fn.fakeSelect = function(){
 				{
 					classFakeDD.show().removeClass('hide').addClass('show');
 					// choosing an option from the fake DD
-					$('.'+thisId+'.fakeFitmentDD a').click(function(){
+					$('.'+thisId+'.skindSelectDD a').click(function(){
 						$(this).parent().hide().removeClass('show').addClass('hide');								 
 						var truncSVehic = $(this).text();
 						var sVehic = $(this).text();
