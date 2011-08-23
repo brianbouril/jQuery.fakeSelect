@@ -3,14 +3,22 @@
 	Created By: Brian Bouril
 	Date: March 23, 2010
 */
-// TEST	
+
+(function($){
+
 $.fn.fakeSelect = function(){
-		selectBox = $(this);
-		selectBox.hide();
-		selectId = selectBox.attr('id');
+		var selectBox = $(this),
+			selectId = selectBox.attr('id'),
+			dropdown = '<div class="'+selectId+' skindSelectDD hide"><a href="javascript:;">Choose...</a></div>';
+			
+				
+		selectBox.hide();	
 			
 		selectBox.wrap('<div id="'+selectId+'Parent" class="skindSelect" />');
-		$('body').append('<div class="'+selectId+' skindSelectDD hide" style="display:none;"><a href="javascript:;">Choose...</a></div>');
+		
+		var fakeSelect = selectBox.parent();
+		
+		$('body').append(dropdown);
 			
 		// --JS to Skin Select Boxes
 		selectBox.before('<div class="select-text">a</div>').each(
@@ -27,7 +35,7 @@ $.fn.fakeSelect = function(){
 		}
 		
 		// BEGIN - Main Trigger for fakeDD 
-		selectBox.parent().click(function(){
+		fakeSelect.click(function(){
 				thisId = $(this).find('select').attr('id');
 				idSelect = $('#'+thisId+'');
 				classFakeDD = $('.'+thisId+'');
@@ -108,8 +116,7 @@ $.fn.fakeSelect = function(){
 		 $('.'+selectId+'').mouseleave(function(){
 				 $(this).hide().removeClass('show').addClass('hide');	
 		 });
-	
-	
-			
-			
+				
 }; //END OF PLUGIN
+
+})(jQuery);
